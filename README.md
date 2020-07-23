@@ -1,6 +1,6 @@
 # SQLAlchemy Homework - Surfs Up!
 
-![surfs-up.png](Images/surfs-up.gif)
+![surfs-up.png](Images/surfs-up.png)
 
 ### Background
 
@@ -31,7 +31,7 @@ This project used a Python and SQLAlchemy to make climate analysis, and data exp
 
 * Plot the results using the DataFrame `plot` method.
 
-  ![precipitation](Images/precipitation.png)
+  ![precipitation](Images/Precipitation_Plot.png)
 
 * Use Pandas to print the summary statistics for the precipitation data.
 
@@ -53,7 +53,7 @@ This project used a Python and SQLAlchemy to make climate analysis, and data exp
 
   * Plot the results as a histogram with `bins=12`.
 
-    ![station-histogram](Images/station-histogram.png)
+    ![station-histogram](Images/station_Plot.png)
 
 - - -
 
