@@ -4,7 +4,7 @@
 
 ### Background
 
-This repository is designed to make a climate analysis on Honolulu, Hawaii, to help clients trip planning, and to outlines what they need to do.
+This repository is designed to make a climate analysis on Honolulu, Hawaii, to help clients trip planning, and help to outline what they need to do.
 
 ## Step 1 - Climate Analysis and Exploration
 
