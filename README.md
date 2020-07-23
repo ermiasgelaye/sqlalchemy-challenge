@@ -1,6 +1,6 @@
 # SQLAlchemy Homework - Surfs Up!
 
-![surfs-up.png](Images/surfs-up.png)
+![surfs-up.png](Images/surfs-up.gif)
 
 ### Background
 
