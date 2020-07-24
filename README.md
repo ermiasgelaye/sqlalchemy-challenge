@@ -10,58 +10,38 @@ This repository is designed to make a climate analysis on Honolulu, Hawaii, to h
 
 This project used a Python and SQLAlchemy to make climate analysis, and data exploration of the climate database. All of the following analysis completed by using SQLAlchemy ORM queries, Pandas, and Matplotlib. The complete climate analysis, and data exploration with python pandas notebook file found here [starter notebook](climate_starter.ipynb), and the SQLAlchemy file is also provided here [hawaii.sqlite](Resources/hawaii.sqlite).
 
+* By using SQLAlchemy an engin created `create_engine` to connect to the sqlite database.
+` engine = create_engine("sqlite:///Resources/hawaii.sqlite")
+inspector = inspect(engine) `
 
-
-
-* Choose a start date and end date for your trip. Make sure that your vacation range is approximately 3-15 days total.
-
-* Use SQLAlchemy `create_engine` to connect to your sqlite database.
-
-* Use SQLAlchemy `automap_base()` to reflect your tables into classes and save a reference to those classes called `Station` and `Measurement`.
+* To reflect the tables into classes and save a reference to those classes called `Station` and `Measurement` an SQLAlchemy `automap_base()` used.
 
 ### Precipitation Analysis
 
-* Design a query to retrieve the last 12 months of precipitation data.
+* A query is designed to retrieve the last 12 months of precipitation data, and only the `date` and `prcp` values is slected.
 
-* Select only the `date` and `prcp` values.
+* The query results also loded into a Pandas DataFrame and the index is seted in to the date column, and sorted the DataFrame values by `date`.
 
-* Load the query results into a Pandas DataFrame and set the index to the date column.
-
-* Sort the DataFrame values by `date`.
-
-* Plot the results using the DataFrame `plot` method.
+* Finally the result ploted by using the DataFrame `plot` method.The plot looks as follows:
 
   ![precipitation](Images/Precipitation_Plot.png)
 
-* Use Pandas to print the summary statistics for the precipitation data.
+* By using the Pandas the summary statistics for the precipitation data was performed and diplayed. 
 
 ### Station Analysis
 
-* Design a query to calculate the total number of stations.
+* A query is designed to calculate the total number of stations at result 9 stations found, and to find the most active stations the stations list, and observation counts is sorted in descending order. Station `USC00519281` has the highest number of observations.
 
-* Design a query to find the most active stations.
+* A query is created to retrieve the last 12 months of temperature observation data (TOBS) and filter by the station with the highest number of observations. The Plot for the results as a histogram with `bins=12` were created and it looks as follows. 
 
-  * List the stations and observation counts in descending order.
-
-  * Which station has the highest number of observations?
-
-  * Hint: You will need to use a function such as `func.min`, `func.max`, `func.avg`, and `func.count` in your queries.
-
-* Design a query to retrieve the last 12 months of temperature observation data (TOBS).
-
-  * Filter by the station with the highest number of observations.
-
-  * Plot the results as a histogram with `bins=12`.
-
-    ![station-histogram](Images/station_Plot.png)
-
+![station-histogram](Images/station_Plot.png)
 - - -
 
 ## Step 2 - Climate App
 
-Now that you have completed your initial analysis, design a Flask API based on the queries that you have just developed.
+After the initial analysis was completed, a Flask API designed based on the queries already developed.
 
-* Use Flask to create your routes.
+* The following routes are created by using Flask. To look and run the code click the following link:[app.py](app.py)
 
 ### Routes
 
@@ -113,6 +93,9 @@ Now that you have completed your initial analysis, design a Flask API based on t
 * You may either use SQLAlchemy or pandas's `read_csv()` to perform this portion.
 
 * Identify the average temperature in June at all stations across all available years in the dataset. Do the same for December temperature.
+
+![Histogram versus Scatter plot of June and December temperature data](Images/june_dec_scatterplot_histogram.png)
+
 
 * Use the t-test to determine whether the difference in the means, if any, is statistically significant. Will you use a paired t-test, or an unpaired t-test? Why?
 
