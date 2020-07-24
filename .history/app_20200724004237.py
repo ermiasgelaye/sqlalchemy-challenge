@@ -45,15 +45,14 @@ def welcome():
         f"<h1>Welcome to the Climate App API!</h1>"
         f"<h1>Step 2 - Climate App</h1>"
         f"This is a Flask API for Climate Analysis .<br/><br/><br/>"
-        f" <img width='600' src='https://www.surfertoday.com/images/stories/surfingsport.jpg'/ >"
-        f"<h2>Here are the available routes:</h2>"
+        f"<h2>Here are the Available Routes:</h2>"
         f"/api/v1.0/precipitation<br/>"
         f"/api/v1.0/stations<br/>"
         f"/api/v1.0/tobs<br/>"
         f"/api/v1.0/start<br/>"
         f"/api/v1.0/start/end<br/>"
 
-        f"<h2>Here you can get the hyperlinked routes list click the link to see the pages:</h2>"
+        f"<h2>Here you can get the hyperlinked Routes list click the link to see the pages:</h2>"
         f"<ol><li><a href=http://127.0.0.1:5000/api/v1.0/precipitation>"
         f"JSON list of precipitation amounts by date for the most recent year of data available</a></li><br/><br/>"
         f"<li><a href=http://127.0.0.1:5000/api/v1.0/stations>"
@@ -64,7 +63,7 @@ def welcome():
         f"When given the start date (YYYY-MM-DD), calculates the minimum, average, and maximum temperature for all dates greater than and equal to the start date</a></li><br/><br/>"
         f"<li><a href=http://127.0.0.1:5000/api/v1.0/2016-08-23/2017-08-23>"
         f"When given the start and the end date (YYYY-MM-DD), calculate the minimum, average, and maximum temperature for dates between the start and end date</a></li></ol><br/>"
-       
+        
     )
 
 
