@@ -1,10 +1,10 @@
 # SQLAlchemy Homework - Surfs Up!
 
-![surfs-up.png](Images/surfs-up.gif)
+![surfs-up.png](Images/surfs-up.png)
 
 ### Background
 
-This repository is designed to make a climate analysis on Honolulu, Hawaii, to help clients trip planning, and to outlines what they need to do.
+This repository is designed to make a climate analysis on Honolulu, Hawaii, to help clients trip planning, and help to outline what they need to do.
 
 ## Step 1 - Climate Analysis and Exploration
 
@@ -31,7 +31,7 @@ This project used a Python and SQLAlchemy to make climate analysis, and data exp
 
 * Plot the results using the DataFrame `plot` method.
 
-  ![precipitation](Images/precipitation.png)
+  ![precipitation](Images/Precipitation_Plot.png)
 
 * Use Pandas to print the summary statistics for the precipitation data.
 
@@ -53,7 +53,7 @@ This project used a Python and SQLAlchemy to make climate analysis, and data exp
 
   * Plot the results as a histogram with `bins=12`.
 
-    ![station-histogram](Images/station-histogram.png)
+    ![station-histogram](Images/station_Plot.png)
 
 - - -
 
@@ -128,7 +128,7 @@ Now that you have completed your initial analysis, design a Flask API based on t
 
   * Use the peak-to-peak (TMAX-TMIN) value as the y error bar (YERR).
 
-    ![temperature](Images/temperature.png)
+    ![temperature](Images/Trip_Avg_Temp.png)
 
 ### Daily Rainfall Average
 
@@ -144,7 +144,7 @@ Now that you have completed your initial analysis, design a Flask API based on t
 
 * Use Pandas to plot an area plot (`stacked=False`) for the daily normals.
 
-  ![daily-normals](Images/daily-normals.png)
+  ![daily-normals](Images/daily_normals.png)
 
 ### Copyright
 
