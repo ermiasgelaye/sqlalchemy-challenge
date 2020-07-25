@@ -8,14 +8,14 @@ This repository is designed to make a climate analysis on Honolulu, Hawaii, to h
 
 ## Table of Contents
 * [Climate Analysis and Exploration](#Climate_Analysis_and_Exploration)
-    -[Precipitation Analysis](#Precipitation_Analysis)
-    -[Station Analysis](#Station_Analysis)
+   - [Precipitation Analysis](#Precipitation_Analysis)
+   - [Station Analysis](#Station_Analysis)
 * [Climate App](#Step_2_Climate_App)
-    - [Routes](#Routes)
+   - [Routes](#Routes)
 * [Recommended Analyses](#Recommended_Analyses)
-    - [Temperature Analysis I](#Temperature_Analysis_I)
-    - [Temperature Analysis II](#Temperature_Analysis_II)
-    - [Daily Rainfall Average](#Daily_Rainfall_Average)
+   - [Temperature Analysis I](#Temperature_Analysis_I)
+   - [Temperature Analysis II](#Temperature_Analysis_II)
+   - [Daily Rainfall Average](#Daily_Rainfall_Average)
 
 ## <a name="Climate_Analysis_and_Exploration"></a> Step 1 - Climate Analysis and Exploration
 
