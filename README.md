@@ -4,7 +4,7 @@
 
 ### Background
 
-This repository is designed to make a climate analysis on Honolulu, Hawaii, to help clients trip planning, and outline what they need to do in there vacation.
+From sandy beaches with emerald-blue water and palm trees under tranquil skies to the rugged, black shoulders of volcanoes that continue to reshape the earth, the Hawaiian Islands teem with diversity. Beyond the terrain itself, the islands present a bedazzling variety of plants, animals and people, a colorful intermingling of different races and ethnic groups, epitomizing the U.S. experience of immigration, collaboration and living together. This repository is designed to make a climate analysis on Honolulu, Hawaii, to help clients trip planning, and outline what they need to do in there vacation.
 
 ## Table of Contents
 * [Climate Analysis and Exploration](#Climate_Analysis_and_Exploration)
