@@ -7,17 +7,17 @@
 This repository is designed to make a climate analysis on Honolulu, Hawaii, to help clients trip planning, and outline what they need to do in there vacation.
 
 ## Table of Contents
-* [Climate Analysis and Exploration](#Main_Objectives_or_Questions_to_Answer)
-    -[Precipitation Analysis](#Data_Sources)
-    -[Station Analysis](#Data_Cleaning)
-* [Climate App](#Data_Analysis)
-    - [Routes](#Restaurants_Data_Summary)
-* [Recommended Analyses](#Data_Analysis)
-    - [Temperature Analysis I](#Restaurants_Data_Summary)
-    - [Temperature Analysis II](#Restaurants_Data_Summary)
-    - [Daily Rainfall Average](#Restaurants_Data_Summary)
+* [Climate Analysis and Exploration](#Climate_Analysis_and_Exploration)
+    -[Precipitation Analysis](#Precipitation_Analysis)
+    -[Station Analysis](#Station_Analysis)
+* [Climate App](#Step_2_Climate_App)
+    - [Routes](#Routes)
+* [Recommended Analyses](#Recommended_Analyses)
+    - [Temperature Analysis I](#Temperature_Analysis_I)
+    - [Temperature Analysis II](#Temperature_Analysis_II)
+    - [Daily Rainfall Average](#Daily_Rainfall_Average)
 
-## Step 1 - Climate Analysis and Exploration
+## <a name="Climate_Analysis_and_Exploration"></a> Step 1 - Climate Analysis and Exploration
 
 This project used a Python and SQLAlchemy to make climate analysis, and data exploration of the climate database. All of the following analysis completed by using SQLAlchemy ORM queries, Pandas, and Matplotlib. The complete climate analysis, and data exploration with python pandas notebook file found here [starter notebook](climate_starter.ipynb), and the SQLAlchemy file is also provided here [hawaii.sqlite](Resources/hawaii.sqlite).
 
@@ -26,7 +26,7 @@ This project used a Python and SQLAlchemy to make climate analysis, and data exp
 
 * To reflect the tables into classes, and save a reference to those classes called `Station` and `Measurement` an SQLAlchemy `automap_base()` is used.
 
-### Precipitation Analysis
+### <a name="Precipitation_Analysis"></a> Precipitation Analysis
 
 * A query is designed to retrieve the last 12 months of precipitation data, and only the `date` and `prcp` values is slected.
 
@@ -38,7 +38,7 @@ This project used a Python and SQLAlchemy to make climate analysis, and data exp
 
 * By using the Pandas the summary statistics for the precipitation data was performed, and diplayed. 
 
-### Station Analysis
+### <a name="Station_Analysis"></a> Station Analysis
 
 * A query is designed to calculate the total number of stations, and 9 stations found. To find the most active station list, and observation counts is sorted in descending order. Station `USC00519281` has the highest number of observations.
 
@@ -47,13 +47,13 @@ This project used a Python and SQLAlchemy to make climate analysis, and data exp
 ![station-histogram](Images/station_Plot.png)
 - - -
 
-## Step 2 - Climate App
+## <a name="Step_2_Climate_App"></a> Step 2 - Climate App
 
 After the initial analysis was completed, a Flask API designed based on the queries already developed.
 
 * The following routes are created by using Flask. To look and run the code click the following link:[app.py](app.py)
 
-### Routes
+### <a name="Routes"></a> Routes
 
 * `/`
 
@@ -84,21 +84,21 @@ After the initial analysis was completed, a Flask API designed based on the quer
 
   * When given the start and the end date, calculate the `TMIN`, `TAVG`, and `TMAX` for dates between the start and end date inclusive.
 
-## Recommended Analyses
+## <a name="Recommended_Analyses"></a> Recommended Analyses
 
-### Temperature Analysis I
+### <a name="Temperature_Analysis_I"></a> Temperature Analysis I
 
 Hawaii is reputed to enjoy mild weather all year.The average temperature in June at all stations across all available years in the dataset is 74.94411764705882 F.
 The average temperature in December at all stations across all available years in the dataset is 71.04152933421226 F. ![Histogram versus Scatter plot of June and December temperature data](Images/june_dec_scatterplot_histogram.png)
 
 I used unpaired t-tests to compare the means of two populations (June temperatures in Hawaii and December temperatures in Hawaii), because unpaired t-tests is used to compare the means of two independent populations. However, a paired t-test (one sample t-test) looks at comparing the sample to the population, which we don't want in this case.
-### Temperature Analysis II
+### <a name="Temperature_Analysis_II"></a> Temperature Analysis II
 The `calc_temps` function used to calculate the min, avg, and max temperatures for the trip using the matching dates from the previous year (i.e.,"2017-01-01" if the trip start date was "2018-01-01").
 
 * The min, avg, and max temperature from the previous query used to plot a bar chart, the average temperature used as the bar heigh, and the peak-to-peak (TMAX-TMIN) value as the y error bar (YERR). The plot looks as follows:
 ![temperature](Images/Trip_Avg_Temp.png)
 
-### Daily Rainfall Average
+### <a name="Daily_Rainfall_Average"></a> Daily Rainfall Average
 
 The rainfall per weather station, and the daily normals are calculated, normals are the averages for the min, avg, and max temperatures. A function called `daily_normals` is used to calculate the daily normals for a specific a given date list for the trip. This dates string are in the format of `%m-%d`. The list of daily normals  also loded into a Pandas DataFrame, indexed equal to the date, and an area plot is conducted (`stacked=False`) for the daily normals. The plot looks as follows:
 
