@@ -6,6 +6,17 @@
 
 This repository is designed to make a climate analysis on Honolulu, Hawaii, to help clients trip planning, and outline what they need to do in there vacation.
 
+## Table of Contents
+* [Climate Analysis and Exploration](#Main_Objectives_or_Questions_to_Answer)
+    -[Precipitation Analysis](#Data_Sources)
+    -[Station Analysis](#Data_Cleaning)
+* [Climate App](#Data_Analysis)
+    - [Routes](#Restaurants_Data_Summary)
+* [Recommended Analyses](#Data_Analysis)
+    - [Temperature Analysis I](#Restaurants_Data_Summary)
+    - [Temperature Analysis II](#Restaurants_Data_Summary)
+    - [Daily Rainfall Average](#Restaurants_Data_Summary)
+
 ## Step 1 - Climate Analysis and Exploration
 
 This project used a Python and SQLAlchemy to make climate analysis, and data exploration of the climate database. All of the following analysis completed by using SQLAlchemy ORM queries, Pandas, and Matplotlib. The complete climate analysis, and data exploration with python pandas notebook file found here [starter notebook](climate_starter.ipynb), and the SQLAlchemy file is also provided here [hawaii.sqlite](Resources/hawaii.sqlite).
@@ -73,7 +84,7 @@ After the initial analysis was completed, a Flask API designed based on the quer
 
   * When given the start and the end date, calculate the `TMIN`, `TAVG`, and `TMAX` for dates between the start and end date inclusive.
 
-## Bonus: Other Recommended Analyses
+## Recommended Analyses
 
 ### Temperature Analysis I
 
